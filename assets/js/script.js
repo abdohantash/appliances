@@ -100,7 +100,7 @@ var swiper = new Swiper(".hero__slider--activation", {
 
     swiper = new Swiper(".brands-cars", {
         autoplay: {
-            delay: 1000,
+            delay: 1100,
           },
         slidesPerView: 6,
         loop: 0,
@@ -130,6 +130,43 @@ var swiper = new Swiper(".hero__slider--activation", {
     });
 
     $(".brands-cars").hover(function() {
+        (this).swiper.autoplay.stop();
+    }, function() {
+        (this).swiper.autoplay.start();
+    });
+
+    swiper = new Swiper(".tajir", {
+        autoplay: {
+            delay: 1000,
+          },
+        slidesPerView: 6,
+        loop: 0,
+        clickable: !0,
+        spaceBetween: 30,
+        breakpoints: {
+            1024: {
+                slidesPerView: 10
+            },
+            992: {
+                slidesPerView: 8
+            },
+            768: {
+                slidesPerView: 6
+            },
+            480: {
+                slidesPerView: 4
+            },
+            0: {
+                slidesPerView: 2
+            }
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+
+    $(".tajir").hover(function() {
         (this).swiper.autoplay.stop();
     }, function() {
         (this).swiper.autoplay.start();
