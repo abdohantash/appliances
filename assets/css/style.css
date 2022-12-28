@@ -622,7 +622,7 @@ hr {
     height: 3.5rem;
     background: inherit;
     border: 1px solid var(--secondary-color);
-    background: var(--body-background-color);
+    background: var(--body-background-color) !important;
     color: var(--secondary-color) !important;
     border-radius: 50%;
     opacity: 0;
@@ -645,10 +645,6 @@ hr {
     display: none;
 }
 
-.swiper__nav--btn:hover {
-    background: var(--secondary-color);
-    color: var(--text-white-color)
-}
 
 .swiper__nav--btn::after {
     display: none
@@ -13209,6 +13205,7 @@ details>summary::-webkit-details-marker {
 
 .brands-cars .swiper__nav--btn {
     background: #fff;
+    color: ;
 }
 
 .hero__slider--section {
