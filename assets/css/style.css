@@ -772,7 +772,9 @@ select {
 
 .section__heading {
     padding-bottom: 1.2rem;
-    position: relative
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section__heading::before {
@@ -815,12 +817,12 @@ select {
 }
 
 .text-head {
-    
-color: #ffffff;
-    
-font-size: 25px;
-    
-text-shadow: 1px 1px 5px #6a6a6a;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    text-shadow: 1px 1px 5px #6a6a6a;
 }
 
 .section__heading--maintitle span {
@@ -838,7 +840,8 @@ text-shadow: 1px 1px 5px #6a6a6a;
 }
 
 .section__heading.style2 {
-    padding-bottom: 0
+    padding-bottom: 0;
+    display: block;
 }
 
 .section__heading.style2 .section__heading--maintitle {
@@ -848,7 +851,6 @@ text-shadow: 1px 1px 5px #6a6a6a;
     font-weight: normal;
     margin-bottom: 30px;
     font-size: 28px !important;
-    text-shadow: 1px 1px 2px #585858;
 }
 
 @media only screen and (min-width:1200px) {
@@ -1164,8 +1166,7 @@ body.overlay__active::before {
 }
 
 @media only screen and (min-width:768px) {
-    .section--padding {
-    }
+    .section--padding {}
 }
 
 .section--nargin {
@@ -2012,13 +2013,11 @@ body.overlay__active::before {
 }
 
 @media only screen and (min-width:480px) {
-    .main__logo--img {
-    }
+    .main__logo--img {}
 }
 
 @media only screen and (min-width:768px) {
-    .main__logo--img {
-    }
+    .main__logo--img {}
 }
 
 .main__logo--title {
@@ -4807,7 +4806,7 @@ input[type=number]::-webkit-outer-spin-button {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr  1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 @media only screen and (min-width:576px) {
@@ -4955,15 +4954,12 @@ input[type=number]::-webkit-outer-spin-button {
     transform: scale(1)
 }
 
-.product__card:hover .product__card--price {
-    opacity: 0;
-    visibility: hidden
-}
+.product__card:hover .product__card--price {}
 
 .product__card:hover .product__card--footer {
     opacity: 1;
     visibility: visible;
-    bottom: -15px
+    bottom: -15px;
 }
 
 .product__card--thumbnail {
@@ -7922,13 +7918,11 @@ input.quickview__value--number {
 }
 
 @media only screen and (min-width:1200px) {
-    .search__filter--btn {
-    }
+    .search__filter--btn {}
 }
 
 @media only screen and (min-width:1366px) {
-    .search__filter--btn {
-    }
+    .search__filter--btn {}
 }
 
 .search__filter--select {
@@ -7987,16 +7981,16 @@ input.quickview__value--number {
     }
 }
 
-.search__filter--inner {padding: 0;}
+.search__filter--inner {
+    padding: 0;
+}
 
 @media only screen and (min-width:576px) {
-    .search__filter--inner {
-    }
+    .search__filter--inner {}
 }
 
 @media only screen and (min-width:1200px) {
-    .search__filter--inner {
-    }
+    .search__filter--inner {}
 }
 
 
@@ -8065,10 +8059,12 @@ input.quickview__value--number {
 }
 
 .search__filter--inner.style5 {
-    background: #ffffff24;
+    background: #0000006e;
     backdrop-filter: blur(12px);
     padding: 30px;
     border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
 }
 }
 
@@ -13185,30 +13181,89 @@ details>summary::-webkit-details-marker {
 }
 
 .brands-cars {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
-.brands-cars a {
+.brands-cars .swiper-slide a,
+.tajir .swiper-slide a {
     display: block;
     margin: 0 auto;
-    /* background: #5e5e5e3b;
-    padding: 10px;
-    border-radius: 5px;
-    backdrop-filter: blur(2px); */
+    background: #fff;
 }
 
-.brands-cars img {
+.brands-cars .swiper-slide img,
+.tajir .swiper-slide img {
     height: 65px;
     object-fit: contain;
     width: 100%;
+    padding: 5px;
 }
 
 .brands-cars .swiper__nav--btn {
     background: #fff;
-    color: ;
 }
 
 .hero__slider--section {
     position: relative;
     margin-bottom: 30px;
+}
+
+.search-div {
+    width: 100%;
+    position: relative;
+    margin: 25px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.search-div input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 50px;
+    background: #0000007a;
+    color: #fff;
+}
+
+.search-div input::placeholder {
+    color: #c0c0c0;
+}
+
+.search-div .btn {
+    width: auto;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-size: 18px;
+    background: #fd0251;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 20px;
+    outline: unset;
+    box-shadow: unset;
+}
+
+.tajer-name {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.logos-div {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logos-div img {
+    width: 100%;
+    height: 32px;
+    object-fit: contain;
+}
+
+.more-products {
+    padding: 2px 15px;
+    background: #121416;
+    border-radius: 3px;
+    color: #fff !important;
 }

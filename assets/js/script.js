@@ -102,16 +102,14 @@ var swiper = new Swiper(".hero__slider--activation", {
         autoplay: {
             delay: 1100,
           },
-        slidesPerView: 6,
-        loop: 0,
-        clickable: !0,
-        spaceBetween: 30,
+        loop: true,
+        spaceBetween: 20,
         breakpoints: {
             1024: {
-                slidesPerView: 10
+                slidesPerView: 8
             },
             992: {
-                slidesPerView: 8
+                slidesPerView: 7
             },
             768: {
                 slidesPerView: 6
@@ -139,16 +137,14 @@ var swiper = new Swiper(".hero__slider--activation", {
         autoplay: {
             delay: 1000,
           },
-        slidesPerView: 6,
-        loop: 0,
-        clickable: !0,
-        spaceBetween: 30,
+        loop: true,
+        spaceBetween: 20,
         breakpoints: {
             1024: {
-                slidesPerView: 10
+                slidesPerView: 8
             },
             992: {
-                slidesPerView: 8
+                slidesPerView: 7
             },
             768: {
                 slidesPerView: 6
